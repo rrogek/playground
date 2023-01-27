@@ -1,0 +1,28 @@
+{
+  "limiters": {
+    "DB": {
+      "limits": {
+        "timeIndicator": "MINUTES",
+        "quota": 1
+      },
+      "types": {
+        "Connectivity": {
+          "timeIndicator": "MINUTES",
+          "quota": 1
+        }
+      }
+    },
+    "FILES": {
+      "limits": {
+        "timeIndicator": "MINUTES",
+        "quota": 5
+      },
+      "types": {
+        "Connectivity": {
+          "timeIndicator": "HOURS",
+          "quota": 10
+        }
+      }
+    }
+  }
+}
