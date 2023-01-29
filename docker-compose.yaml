@@ -1,0 +1,10 @@
+version: '3.0'
+services:
+  consul:
+    container_name: consul_kv
+    image: consul:1.4.4
+    ports:
+      - "8500:8500"
+    environment:
+      - CONSUL_BIND_INTERFACE=eth0
+    restart: always
